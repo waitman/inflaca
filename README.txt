@@ -11,6 +11,15 @@ __EOF
 
 example data
 
+% flac -a 03\ -\ Rio.flac
+(creates 03 - Rio.ana)
+
+READ in the flac analysis file.
+
+% /usr/cust/bin/php inflacana.php 03\ -\ Rio.ana
+
+
+
 % psql flac -c "SELECT * FROM frames"
  snd_idx | frame | offset |  bits  | blocksize | sample_rate | channels | channel_assignment 
 ---------+-------+--------+--------+-----------+-------------+----------+--------------------
